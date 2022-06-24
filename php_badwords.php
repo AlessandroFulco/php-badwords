@@ -25,17 +25,25 @@
     <title>BadWords</title>
 </head>
 <body>
-    <form action="" methods="get">
-        <label for="name">Scelta Parola da sostituire</label>
-        <input type="text" id="name" name="name">
-        <button>Sostituisci</button>
-    </form>
+    
     <h1>
         Testo base
     </h1>
     <p>
         <?php echo $testo; ?>
     </p>
+    <div>
+        <span>Lunghezza testo base</span>
+        <strong>
+            <?= strlen($testo); ?>
+        </strong>
+    </div>
+
+    <form action="" methods="get">
+        <label for="name">Scelta Parola da sostituire</label>
+        <input type="text" id="name" name="name">
+        <button>Sostituisci</button>
+    </form>
 
     <div id="metodi">
         <div id="indiretto">
@@ -46,6 +54,9 @@
             <p>
                 <?= $testo_replaced; ?>
             </p>
+            <strong>
+                <?= strlen($testo_replaced); ?>
+            </strong>
         </div>
 
 
@@ -57,6 +68,9 @@
             <p>
                 <?= $testo_replaced2; ?>
             </p>
+            <strong>
+                <?= strlen($testo_replaced2); ?>
+            </strong>
         </div>
     </div>
 </body>
