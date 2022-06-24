@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+#metodi{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#diretto, #indiretto{
+    padding: 20px;
+    border: 10px solid green;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-weight: bold;
+}
+
+#diretto{
+    background-color: red;
+}
+
+#indiretto{
+    background-color: lightblue;
+}
