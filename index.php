@@ -9,6 +9,7 @@
     $parola = $_GET['name'];
     // $testo = 'lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet';
     $testo_replaced2 = str_replace($parola, '***', $testo);
+    $count = strlen($testo);
 ?>
 
 
@@ -30,12 +31,12 @@
         Testo base
     </h1>
     <p>
-        <?php echo $testo; ?>
+        <?= $testo; ?>
     </p>
     <div>
         <span>Lunghezza testo base</span>
         <strong>
-            <?= strlen($testo); ?>
+            <?= $count ?>
         </strong>
     </div>
 
@@ -55,7 +56,7 @@
                 <?= $testo_replaced; ?>
             </p>
             <strong>
-                <?= strlen($testo_replaced); ?>
+                <?= $count ?>
             </strong>
         </div>
 
@@ -69,7 +70,7 @@
                 <?= $testo_replaced2; ?>
             </p>
             <strong>
-                <?= strlen($testo_replaced2); ?>
+                <?= $count ?>
             </strong>
         </div>
     </div>
